@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 function ToDo({text, onBtnClick, id}){
   return(
-    <Link to={`/${id}`}>
-      {text} <button onClick={onBtnClick} >DEL</button>
-    </Link>
+    <li>
+      <Link to={`/${id}`}>{text}</Link>
+      <button onClick={onBtnClick} >DEL</button>
+    </li>
   )
 }
 
